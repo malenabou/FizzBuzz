@@ -42,8 +42,13 @@ namespace FizzBuzz
                         FuncionCadena(i.ToString());
                 }
             }
+            int num1, num2;
+            Console.WriteLine("Enter a number to start");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter a number to finish");
+            num2 = Convert.ToInt32(Console.ReadLine());
 
-            FizzBuzz(1, 100);
+            FizzBuzz(num1, num2);
         }
     }
 }
