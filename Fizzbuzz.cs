@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FizzBuzz
 {
@@ -13,25 +13,23 @@ namespace FizzBuzz
             int i;
             for (i = 1; i <= 100; i++)
             {
-                if (i % 3 == 0 && i % 5 == 0)
+                string resultado = "";
+                if (i % 5 == 0)
                 {
-                    Console.WriteLine("FizzBuzz");
+                    resultado = "Fizz";
                 }
-                else
 
-                    if (i % 5 == 0)
+                if (i % 3 == 0)
                 {
-                    Console.WriteLine("Buzz");
+                    resultado += "Buzz";
                 }
-                else
 
-                        if (i % 3 == 0)
+                if (resultado.Length == 0)
                 {
-                    Console.WriteLine("Fizz");
+                    resultado = i.ToString();
                 }
-                else
-                    Console.WriteLine(i);
 
+                Console.WriteLine(resultado);
             }
         }
     }
